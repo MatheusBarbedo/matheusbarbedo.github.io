@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matheus Barbedo | Desenvolvedor Full Stack</title>
+<meta name="description" content="Desenvolvedor Full Stack .NET e Angular. APIs, integrações, sistemas web, apps desktop e automação com IA.">
+<meta property="og:title" content="Matheus Barbedo | Desenvolvedor Full Stack">
+<meta property="og:description" content="APIs, integrações, sistemas web, apps desktop e automação com IA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0c0c0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2318181b'/><text x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='%23e98647' text-anchor='middle'>MB</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">matheus<span>.</span>barbedo</a>
+    <nav aria-label="Seções">
+      <a href="#servicos" data-i18n="nav.services">Serviços</a>
+      <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+      <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="lang" class="lang" type="button" aria-label="Switch to English">EN</button>
+      <a href="#contato" class="btn primary sm" data-i18n="cta.contact">Fale comigo</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap" id="conteudo">
+    <div class="hero-text">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Desenvolvedor Full Stack Sênior</p>
+      <h1><span data-i18n="hero.title">Software sob medida, do back-end à tela.</span></h1>
+      <p class="lead" data-i18n="hero.lead">APIs, sistemas web e apps desktop com .NET, Angular e React, mais automações com IA para o trabalho repetitivo.</p>
+      <div class="cta">
+        <a href="#contato" class="btn primary" data-i18n="cta.contact">Fale comigo</a>
+        <a href="#projetos" class="link-arrow" data-i18n="hero.cta2">Ver projetos</a>
+      </div>
+    </div>
+    <aside class="now" aria-label="Status">
+      <dl>
+        <div><dt data-i18n="now.who">Quem</dt><dd>Matheus Barbedo</dd></div>
+        <div><dt data-i18n="now.today">Hoje</dt><dd data-i18n="now.todayv">Dev Sênior na Autoglass</dd></div>
+        <div><dt data-i18n="now.xp">Experiência</dt><dd data-i18n="now.xpv">5 anos em produção</dd></div>
+        <div><dt data-i18n="now.base">Base</dt><dd data-i18n="now.basev">Vitória/ES, atendo remoto</dd></div>
+        <div><dt>Stack</dt><dd>.NET · Angular · React · Tauri</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section id="servicos" class="wrap section">
+    <h2 data-i18n="services.title">O que eu faço</h2>
+    <ol class="services">
+      <li class="reveal">
+        <span class="num">01</span>
+        <h3 data-i18n="s1.t">APIs e integrações</h3>
+        <p data-i18n="s1.d">Back-end em C#/.NET robusto e rápido. Integração com sistemas de terceiros, Pix, webhooks, filas, SMS, WhatsApp, OAuth2 e AWS.</p>
+      </li>
+      <li class="reveal">
+        <span class="num">02</span>
+        <h3 data-i18n="s2.t">Sistemas web</h3>
+        <p data-i18n="s2.d">Painéis, portais e sistemas internos em Angular ou React, responsivos e ligados ao seu back-end, do protótipo à produção.</p>
+      </li>
+      <li class="reveal">
+        <span class="num">03</span>
+        <h3 data-i18n="s3.t">Apps desktop</h3>
+        <p data-i18n="s3.d">Aplicativos Windows leves com Tauri ou Electron, com instalador, atualização e funcionamento offline quando o negócio pede.</p>
+      </li>
+      <li class="reveal">
+        <span class="num">04</span>
+        <h3 data-i18n="s4.t">Automação e IA</h3>
+        <p data-i18n="s4.d">Agentes de IA, scripts e bots para tarefas repetitivas: processamento de vídeo, leitura de tela por OCR, fluxos com Claude e Copilot.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projetos" class="wrap section">
+    <div class="section-head">
+      <h2 data-i18n="projects.title">Projetos</h2>
+      <div class="filters" role="group" aria-label="Filtro">
+        <button class="chip" type="button" aria-pressed="true" data-filter="all" data-i18n="f.all">Todos</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="web">Web</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="desktop">Desktop</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="ia" data-i18n="f.ia">IA e automação</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="jogos" data-i18n="f.games">Jogos</button>
+      </div>
+    </div>
+    <div id="project-list" class="projects"></div>
+  </section>
+
+  <section id="experiencia" class="wrap section">
+    <h2 data-i18n="exp.title">Experiência</h2>
+    <div class="exp">
+      <div class="exp-side">
+        <h3>Autoglass</h3>
+        <p class="muted" data-i18n="exp.period">Mar/2021 até hoje</p>
+        <ol class="timeline">
+          <li><span>05/2024</span><span data-i18n="tl.4">Dev Sênior</span></li>
+          <li><span>01/2023</span><span data-i18n="tl.3">Dev Pleno</span></li>
+          <li><span>01/2022</span><span data-i18n="tl.2">Dev Júnior</span></li>
+          <li><span>03/2021</span><span data-i18n="tl.1">Estagiário</span></li>
+        </ol>
+      </div>
+      <div class="cases">
+        <article class="case reveal">
+          <h4 data-i18n="c1.t">Plataforma de vistorias, produto novo</h4>
+          <p class="tags">.NET 8 · Angular 21 · Oracle · NHibernate · AWS Cognito</p>
+          <p data-i18n="c1.d">Da concepção e modelagem até a entrega. Plataforma plug-and-play: novos clientes e integradores entram por configuração, sem código novo. Autenticação OAuth2 para seguradoras parceiras, WebApp de self-vistoria pelo celular e migrations Oracle com rollback seguro.</p>
+        </article>
+        <article class="case reveal">
+          <h4 data-i18n="c2.t">Sistema de vistorias legado</h4>
+          <p class="tags">.NET Framework · Dapper · REST · XML · SFTP · SQS</p>
+          <p data-i18n="c2.d">Evolução e sustentação de um sistema crítico integrado a várias seguradoras. Processamento assíncrono com filas, SMS e WhatsApp com rastreio de entrega e resposta a incidentes guiada por logs.</p>
+        </article>
+        <article class="case reveal">
+          <h4 data-i18n="c3.t">Orquestrador de agentes de IA</h4>
+          <p class="tags">Claude Code · GitHub Copilot · Evals · Context engineering</p>
+          <p data-i18n="c3.d">Iniciativa própria: um agente principal recebe a tarefa e conduz planejamento, delegação para agentes especialistas, validação e testes. Avaliação com golden dataset, memória entre tarefas e controle de custo por token.</p>
+        </article>
+        <ul class="bullets reveal">
+          <li data-i18n="b.1">Migração de Angular 18 para 21 em produção.</li>
+          <li data-i18n="b.2">Mensageria com SQS e Kafka; integrações com Infobip e Zenvia.</li>
+          <li data-i18n="b.3">Observabilidade com Grafana, Loki e Kibana; deploy com Ansible.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <h2 data-i18n="stack.title">Stack</h2>
+    <dl class="stack reveal">
+      <div><dt>Back-end</dt><dd>C# · .NET 8 · ASP.NET Core · Minimal API · Dapper · NHibernate · EF Core · xUnit</dd></div>
+      <div><dt>Front-end</dt><dd>Angular · React · Vue 3 · TypeScript · HTML · CSS</dd></div>
+      <div><dt data-i18n="stack.data">Cloud e dados</dt><dd>AWS S3 · SQS · Cognito · Oracle PL/SQL · MongoDB · Supabase · Liquibase · Kafka</dd></div>
+      <div><dt>Desktop</dt><dd>Tauri 2 · Electron · Python</dd></div>
+      <div><dt data-i18n="stack.ai">IA e automação</dt><dd>Claude Code · GitHub Copilot · OCR · OpenCV · ffmpeg · Node.js</dd></div>
+      <div><dt data-i18n="stack.ops">Qualidade e operação</dt><dd>SOLID · DDD · Clean Code · Grafana · Loki · Kibana · Ansible</dd></div>
+    </dl>
+  </section>
+
+  <section id="contato" class="wrap section contact">
+    <h2 class="contact-title" data-i18n="contact.title">Entre em contato</h2>
+    <div class="mail">
+      <a href="mailto:matheus.barbedo.2001@gmail.com" class="mail-link">matheus.barbedo.2001@gmail.com</a>
+      <button id="copy" class="btn sm" type="button" data-i18n="contact.copy">Copiar</button>
+    </div>
+    <ul class="socials">
+      <li><a href="https://www.linkedin.com/in/matheus-eugenio-barbedo-da-silva" target="_blank" rel="noopener" class="link-arrow">LinkedIn</a></li>
+      <li><a href="https://github.com/MatheusBarbedo" target="_blank" rel="noopener" class="link-arrow">GitHub</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span id="year"></span> Matheus Eugênio Barbedo da Silva</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
