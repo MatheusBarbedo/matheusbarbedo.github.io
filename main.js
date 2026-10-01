@@ -14,14 +14,14 @@ const projects = [
     name: "Nosso Dinheiro",
     cat: "desktop",
     stack: "Tauri 2 · React · TypeScript · Supabase",
-    pt: "App desktop de finanças para casais. Controla gastos compartilhados, faz o acerto de contas entre os dois, orçamentos por categoria, lançamentos recorrentes e exportação CSV, com login e dados sincronizados na nuvem.",
-    en: "Desktop finance app for couples. Tracks shared expenses, settles balances between partners, category budgets, recurring entries and CSV export, with login and cloud-synced data."
+    pt: "App desktop de finanças para casais. Controla gastos compartilhados e realiza o rateio de despesas entre o casal, com orçamentos por categoria, lançamentos recorrentes, exportação CSV, login e dados sincronizados na nuvem.",
+    en: "Desktop finance app for couples. Tracks shared expenses and splits them between partners, with category budgets, recurring entries, CSV export, login and cloud-synced data."
   },
   {
     name: "YouTube Downloader",
     cat: "desktop",
     stack: "Electron · Node.js · yt-dlp · ffmpeg",
-    pt: "App Windows para baixar vídeos em MP4 ou MP3. Mostra prévia com capa, título e duração, deixa escolher a resolução e exibe progresso e velocidade em tempo real. Distribuído com instalador.",
+    pt: "App Windows para baixar vídeos em MP4 ou MP3. Mostra prévia com capa, título e duração, permite escolher a resolução e exibe progresso e velocidade em tempo real. Distribuído com instalador.",
     en: "Windows app to download videos as MP4 or MP3. Shows a preview with thumbnail, title and duration, lets you pick the resolution and displays live progress and speed. Shipped with an installer."
   },
   {
@@ -90,7 +90,7 @@ const en = {
   "s2.t": "Web systems",
   "s2.d": "Dashboards, portals and internal systems in Angular or React, responsive and wired to your back-end, from prototype to production.",
   "s3.t": "Desktop apps",
-  "s3.d": "Lightweight Windows apps with Tauri or Electron, with installer, updates and offline support when the business needs it.",
+  "s3.d": "Lightweight Windows apps with Tauri or Electron, with installer, updates and offline support when the project requires it.",
   "s4.t": "Automation and AI",
   "s4.d": "AI agents, scripts and bots for repetitive tasks: video processing, screen reading with OCR, workflows with Claude and Copilot.",
   "projects.title": "Projects",
