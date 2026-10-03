@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Projetos | Matheus Barbedo</title>
+<meta name="description" content="Projetos de Matheus Barbedo: sistemas web, apps desktop, automação com IA e ferramentas para jogos.">
+<meta property="og:title" content="Projetos | Matheus Barbedo">
+<meta property="og:description" content="APIs, integrações, sistemas web, apps desktop e automação com IA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0c0c0e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2318181b'/><text x='16' y='21.5' font-family='monospace' font-size='14' font-weight='700' fill='%23e98647' text-anchor='middle'>MB</text></svg>">
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">matheus<span>.</span>barbedo</a>
+    <nav aria-label="Seções">
+      <a href="index.html#experiencia" data-i18n="nav.experience">Experiência</a>
+      <a href="index.html#servicos" data-i18n="nav.services">Serviços</a>
+      <a href="projetos.html" class="active" aria-current="page" data-i18n="nav.projects">Projetos</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="lang" class="lang" type="button" aria-label="Switch to English">EN</button>
+      <a href="index.html#contato" class="btn primary sm" data-i18n="cta.contact">Fale comigo</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="wrap page" id="conteudo">
+    <div class="section-head">
+      <h1 data-i18n="projects.title">Projetos</h1>
+      <div class="filters" role="group" aria-label="Filtro">
+        <button class="chip" type="button" aria-pressed="true" data-filter="all" data-i18n="f.all">Todos</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="web">Web</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="desktop">Desktop</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="ia" data-i18n="f.ia">IA e automação</button>
+        <button class="chip" type="button" aria-pressed="false" data-filter="jogos" data-i18n="f.games">Jogos</button>
+      </div>
+    </div>
+    <div id="project-list" class="projects"><noscript><p class="muted">Projetos no <a href="https://github.com/MatheusBarbedo">GitHub</a>.</p></noscript></div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <p>© <span id="year"></span> Matheus Eugênio Barbedo da Silva</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
