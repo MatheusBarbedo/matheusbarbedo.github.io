@@ -32,6 +32,13 @@ const projects = [
     en: "Token saver for AI coding agents. Automatically compresses verbose command output (git, tests, builds) before it reaches the agent, cutting cost and context usage. Zero dependencies, zero install."
   },
   {
+    name: "Pacotes de skills de IA",
+    cat: "ia",
+    stack: "Claude Code, Skills, Agents, PowerShell",
+    pt: "Biblioteca própria de skills e agents para o Claude Code em pacotes instaláveis: método de dev sênior (preparar o projeto, refinar e orquestrar a tarefa com revisão e verificação), consultores de .NET, Angular e Oracle com fontes oficiais, design de interface com gate de renderização e git flow pela linha de comando. Fonte única sincronizada entre máquinas.",
+    en: "My own library of Claude Code skills and agents, shipped as installable packages: a senior dev workflow (project setup, task refinement and orchestration with review and verification), .NET, Angular and Oracle advisors backed by official sources, UI design with a rendering gate, and git flow from the command line. One source of truth synced across machines."
+  },
+  {
     name: "ytb-shorts",
     cat: "ia",
     stack: "Node.js, ffmpeg, yt-dlp, Claude Code",
@@ -41,16 +48,16 @@ const projects = [
   {
     name: "Limbus Companion",
     cat: "jogos",
-    stack: "Tauri 2, Vue 3, Python, OCR, OpenCV",
-    pt: "Companion desktop para Limbus Company com overlay in-game. Reconhece a tela por OCR e visão computacional para recomendar escolhas, planeja rotas e monta times. Roda 100% offline.",
-    en: "Desktop companion for Limbus Company with an in-game overlay. Reads the screen with OCR and computer vision to recommend choices, plans routes and builds teams. Runs 100% offline."
+    stack: "Tauri 2, Vue 3, TypeScript, C++, Python",
+    pt: "Companion desktop para Limbus Company. Lê o estado do jogo ao vivo para sincronizar a coleção, acompanhar e automatizar a Mirror Dungeon; monta times, importa e exporta códigos de deck e planeja rotas. Roda 100% offline.",
+    en: "Desktop companion for Limbus Company. Reads the live game state to sync your collection and to track and automate Mirror Dungeon runs; builds teams, imports and exports deck codes and plans routes. Runs 100% offline."
   },
   {
     name: "Limbus Company PT-BR",
     cat: "jogos",
     stack: "Python, Pipelines de tradução, Glossário",
-    pt: "Tradução para português dos diálogos, identidades, habilidades e termos do jogo. Quatro pipelines independentes que preservam a estrutura dos arquivos originais e seguem um glossário único.",
-    en: "Brazilian Portuguese translation of the game's dialogue, identities, skills and keywords. Four independent pipelines that preserve the original file structure and follow a single glossary."
+    pt: "Tradução para português dos diálogos, identidades, habilidades e termos do jogo. Pipelines independentes por tipo de texto e uma camada geral que cobre o jogo inteiro fora dos capítulos, preservando a estrutura dos arquivos originais e seguindo um glossário único.",
+    en: "Brazilian Portuguese translation of the game's dialogue, identities, skills and keywords. Independent pipelines per text type plus a general layer that covers the whole game outside the story chapters, preserving the original file structure and following a single glossary."
   },
   {
     name: "E7 Shop Refresher",
@@ -107,10 +114,11 @@ const en = {
   "c2.t": "Legacy vehicle inspection system",
   "c2.d": "Evolution and support of a critical system integrated with several insurers. Asynchronous processing with queues, SMS and WhatsApp delivery tracking and log-driven incident response.",
   "c3.t": "AI agent orchestrator",
-  "c3.d": "Built on my own initiative to speed up my daily work: a main agent takes a task and drives planning, delegation to specialist agents, validation and testing. Evaluation with a golden dataset, memory across tasks and per-token cost control.",
+  "c3.d": "Built on my own initiative to speed up my daily work: a main agent takes a task and drives planning, delegation to specialist agents, validation and testing. Evaluation with a golden dataset, memory across tasks and per-token cost control. Includes .NET, Angular and Oracle advisor agents backed by official sources and an agent that opens and closes git flow releases and hotfixes.",
   "b.1": "Angular 18 to 21 migration in production.",
   "b.2": "Messaging with SQS and Kafka; Infobip and Zenvia integrations.",
-  "b.3": "Observability with Grafana, Loki and Kibana; deployments with Ansible.",
+  "b.3": "CI/CD migration from Jenkins and Docker Swarm to Azure DevOps and Kubernetes, through production stabilization.",
+  "b.4": "Production incidents and performance: pod OOM, queue redelivery and slow reports measured with Grafana, Loki and Thanos; fixes for Sonar findings.",
   "stack.title": "Stack",
   "stack.data": "Cloud and data",
   "stack.ai": "AI and automation",
