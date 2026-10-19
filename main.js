@@ -11,6 +11,29 @@ const projects = [
     links: [["Front-end", gh + "copylandia-frontend"], ["Back-end", gh + "copylandia-backend"]]
   },
   {
+    name: "RPG VTT",
+    cat: "web",
+    stack: "Node.js, Express, Socket.IO, SQLite, JavaScript",
+    pt: "Mesa virtual para RPG de mesa com campanhas compartilhadas, chat e rolagem de dados em tempo real, mapa com grade e encaixe, tokens com dono, desenhos, névoa de guerra e snapshots da cena. Login com papéis de mestre e jogador.",
+    en: "Virtual tabletop for pen-and-paper RPGs with shared campaigns, real-time chat and dice rolls, a grid map with snapping, owned tokens, drawings, fog of war and scene snapshots. Login with game master and player roles.",
+    links: [["GitHub", gh + "RPG-VVT"]]
+  },
+  {
+    name: "Sabatina Sênior",
+    cat: "web",
+    stack: "HTML, CSS, JavaScript",
+    pt: "Site de estudo com questões de C# e .NET, Angular, banco de dados e fundamentos no nível de entrevista para dev sênior. Você responde antes de ver a explicação, as questões erradas voltam primeiro e as alternativas são embaralhadas. Sem build, com progresso salvo no navegador.",
+    en: "Study site with C# and .NET, Angular, database and fundamentals questions at senior developer interview level. You answer before seeing the explanation, missed questions come back first and options are shuffled. No build step, progress saved in the browser."
+  },
+  {
+    name: "Hub CZN (open source)",
+    cat: "desktop",
+    stack: "Tauri 2, React, TypeScript, Tailwind CSS",
+    pt: "Contribuição para um otimizador desktop open source de Chaos Zero Nightmare. Criei a seção de deck builder: montagem de decks com limite de custo, cartas filtradas por classe, variantes de epiphany, aba de persona engraving, decks salvos localmente e traduções. Cinco pull requests aceitos.",
+    en: "Contribution to an open source desktop optimizer for Chaos Zero Nightmare. I built the deck builder section: deck building with a cost limit, cards filtered by class, epiphany variants, a persona engraving tab, locally saved decks and translations. Five pull requests merged.",
+    links: [["Pull requests", "https://github.com/sostenesfreitas/hub-czn/pulls?q=is%3Apr+author%3AMatheusBarbedo"]]
+  },
+  {
     name: "Nosso Dinheiro",
     cat: "desktop",
     stack: "Tauri 2, React, TypeScript, Supabase",
@@ -29,7 +52,8 @@ const projects = [
     cat: "ia",
     stack: "Node.js, Claude Code, GitHub Copilot, Codex",
     pt: "Economizador de tokens para agentes de IA de programação. Comprime automaticamente a saída de comandos verbosos (git, testes, build) antes de chegar ao agente, reduzindo custo e contexto. Zero dependências, zero instalação.",
-    en: "Token saver for AI coding agents. Automatically compresses verbose command output (git, tests, builds) before it reaches the agent, cutting cost and context usage. Zero dependencies, zero install."
+    en: "Token saver for AI coding agents. Automatically compresses verbose command output (git, tests, builds) before it reaches the agent, cutting cost and context usage. Zero dependencies, zero install.",
+    links: [["GitHub", gh + "context-saver"]]
   },
   {
     name: "Pacotes de skills de IA",
@@ -44,6 +68,14 @@ const projects = [
     stack: "Node.js, ffmpeg, yt-dlp, Claude Code",
     pt: "Gera cortes verticais (Shorts e Reels) a partir de um link do YouTube. A IA lê a transcrição e analisa os frames para escolher os melhores momentos; o script corta e enquadra cada clipe no formato vertical.",
     en: "Turns a YouTube link into vertical clips (Shorts and Reels). The AI reads the transcript and analyzes frames to pick the best moments; the script cuts and reframes each clip to vertical."
+  },
+  {
+    name: "Classificador e detector web",
+    cat: "ia",
+    stack: "JavaScript, TensorFlow.js, Teachable Machine, COCO-SSD",
+    pt: "Aplicação web que classifica roupas por imagem com um modelo treinado no Teachable Machine e detecta objetos com o COCO-SSD. Tudo roda no navegador, sem backend nem instalação.",
+    en: "Web app that classifies clothing from an image with a Teachable Machine model and detects objects with COCO-SSD. Everything runs in the browser, no back-end or install.",
+    links: [["GitHub", gh + "classificador-e-detector-web"]]
   },
   {
     name: "Limbus Companion",
@@ -66,6 +98,13 @@ const projects = [
     pt: "Automação para Epic Seven que atualiza a loja e compra itens raros sozinha, com interface gráfica, controle de velocidade e status ao vivo. Compatível com emuladores modernos de múltiplos displays.",
     en: "Epic Seven automation that refreshes the shop and buys rare items on its own, with a GUI, speed control and live status. Works with modern multi-display emulators.",
     links: [["GitHub", gh + "e7-shop-refresher"]]
+  },
+  {
+    name: "Pacote de mods Project Zomboid",
+    cat: "jogos",
+    stack: "Python, Lua, Build 42",
+    pt: "Mais de 50 mods de Project Zomboid fundidos em um só para jogar com amigos, com correções de compatibilidade, traduções PT-BR e scripts que montam o pacote, conferem os arquivos e ajustam a memória do jogo.",
+    en: "Over 50 Project Zomboid mods merged into one pack to play with friends, with compatibility fixes, Brazilian Portuguese translations and scripts that build the pack, verify the files and tune the game's memory."
   }
 ];
 
