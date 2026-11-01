@@ -231,7 +231,8 @@ h4 { font-size: 18px; }
 
 .page { padding-block: 64px 96px; }
 .section-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px 24px; margin-bottom: 32px; }
-.section-head h1 { margin: 0; }
+.section-head :is(h1, h2) { margin: 0; }
+.section .section-head { margin-bottom: 40px; }
 .filters { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--surface-2); border-radius: 12px; }
 .chip {
   border: 0;
@@ -266,8 +267,8 @@ h4 { font-size: 18px; }
 .project.featured > p:not(.tags) { max-width: 60ch; }
 .project .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .project .cat { font: 400 12px "Geist Mono", monospace; color: var(--faint); }
-.project > p { color: var(--muted); margin: 0 0 20px; flex: 1; font-size: 15px; }
-.tags { font: 400 12.5px/1.6 "Geist Mono", monospace; color: var(--accent) !important; margin: 0 0 12px !important; flex: 0 !important; }
+.project > p:not(.tags) { color: var(--muted); margin: 0 0 20px; flex: 1; font-size: 15px; }
+.tags { font: 400 12.5px/1.6 "Geist Mono", monospace; color: var(--accent); margin: 0 0 12px; }
 .project .links { display: flex; gap: 18px; font-size: 14px; }
 .project .links a { color: var(--text); }
 .project .private { font: 400 12.5px "Geist Mono", monospace; color: var(--faint); }

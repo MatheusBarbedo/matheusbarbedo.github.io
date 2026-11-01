@@ -5,6 +5,7 @@ const projects = [
     name: "Copylândia",
     cat: "web",
     featured: true,
+    home: true,
     stack: ".NET 8, Angular, EF Core, SQLite, pdf.js",
     pt: "Autoatendimento de impressão (TCC). O cliente envia o PDF, escolhe as páginas, vê o preço calculado na hora e paga via Pix. Um webhook confirma o pagamento e o trabalho entra na fila da impressora com histórico de estados.",
     en: "Self-service printing kiosk (capstone project). Customers upload a PDF, pick pages, see the price instantly and pay via Pix. A webhook confirms payment and the job goes to the printer queue with status history.",
@@ -13,6 +14,7 @@ const projects = [
   {
     name: "RPG VTT",
     cat: "web",
+    home: true,
     stack: "Node.js, Express, Socket.IO, SQLite, JavaScript",
     pt: "Mesa virtual para RPG de mesa com campanhas compartilhadas, chat e rolagem de dados em tempo real, mapa com grade e encaixe, tokens com dono, desenhos, névoa de guerra e snapshots da cena. Login com papéis de mestre e jogador.",
     en: "Virtual tabletop for pen-and-paper RPGs with shared campaigns, real-time chat and dice rolls, a grid map with snapping, owned tokens, drawings, fog of war and scene snapshots. Login with game master and player roles.",
@@ -28,6 +30,7 @@ const projects = [
   {
     name: "Hub CZN (open source)",
     cat: "desktop",
+    home: true,
     stack: "Tauri 2, React, TypeScript, Tailwind CSS",
     pt: "Contribuição para um otimizador desktop open source de Chaos Zero Nightmare. Criei a seção de deck builder: montagem de decks com limite de custo, cartas filtradas por classe, variantes de epiphany, aba de persona engraving, decks salvos localmente e traduções. Cinco pull requests aceitos.",
     en: "Contribution to an open source desktop optimizer for Chaos Zero Nightmare. I built the deck builder section: deck building with a cost limit, cards filtered by class, epiphany variants, a persona engraving tab, locally saved decks and translations. Five pull requests merged.",
@@ -56,11 +59,26 @@ const projects = [
     links: [["GitHub", gh + "context-saver"]]
   },
   {
-    name: "Pacotes de skills de IA",
+    name: "memory-saver",
     cat: "ia",
-    stack: "Claude Code, Skills, Agents, PowerShell",
-    pt: "Biblioteca própria de skills e agents para o Claude Code em pacotes instaláveis: método de dev sênior (preparar o projeto, refinar e orquestrar a tarefa com revisão e verificação), consultores de .NET, Angular e Oracle com fontes oficiais, design de interface com gate de renderização e git flow pela linha de comando. Fonte única sincronizada entre máquinas.",
-    en: "My own library of Claude Code skills and agents, shipped as installable packages: a senior dev workflow (project setup, task refinement and orchestration with review and verification), .NET, Angular and Oracle advisors backed by official sources, UI design with a rendering gate, and git flow from the command line. One source of truth synced across machines."
+    stack: "Node.js, Claude Code, Hooks, Markdown",
+    pt: "Memória local para o Claude Code, em markdown, dentro do próprio workspace. Aprendizados, decisões e pendências ficam em arquivos separados por tipo, com índice gerado sozinho, e hooks entregam a memória na hora certa: um resumo no começo da sessão e ponteiros quando o assunto aparece no pedido. Zero dependências, roda em Windows, Linux e macOS.",
+    en: "Local memory for Claude Code, in markdown, inside the workspace itself. Learnings, decisions and open items live in files split by type with an auto-generated index, and hooks deliver the memory at the right moment: a summary when the session starts and pointers when a topic comes up in the request. Zero dependencies, runs on Windows, Linux and macOS.",
+    links: [["GitHub", gh + "memory-saver"]]
+  },
+  {
+    name: "claude-kit",
+    cat: "ia",
+    stack: "Node.js, Claude Code, Skills, Agents",
+    pt: "Segunda versão do claude-arsenal. Um catálogo de skills, agents e comandos organizados por contexto, com um agente orquestrador que escolhe o item certo para cada tarefa e ativa só o necessário, sem gastar contexto com centenas de skills ligadas. Instalador sem dependências e com testes que prepara uma máquina ou um workspace, atualiza, valida e remove o que instalou, sem sobrescrever arquivo editado no destino.",
+    en: "Second version of claude-arsenal. A catalog of skills, agents and commands organized by context, with an orchestrator agent that picks the right item for each task and activates only what is needed, instead of spending context on hundreds of enabled skills. A tested, dependency-free installer sets up a machine or workspace, updates, validates and removes what it installed, without overwriting files edited at the destination."
+  },
+  {
+    name: "claude-arsenal",
+    cat: "ia",
+    stack: "PowerShell, Claude Code, Skills, Agents, Hooks",
+    pt: "Primeira versão do meu ambiente do Claude Code, portátil entre máquinas, hoje substituída pelo claude-kit. Skills e agents em pacotes: método de dev sênior full stack (preparar o projeto, refinar e orquestrar a tarefa), design de interface com gate de renderização, git flow pela linha de comando, README baseado em evidência do código e vídeo por código. Sincronização por hook no fim de cada sessão e retomada automática depois do limite de uso.",
+    en: "First version of my portable Claude Code environment, now replaced by claude-kit. Skills and agents in packages: a senior full stack dev workflow (project setup, task refinement and orchestration), UI design with a rendering gate, git flow from the command line, evidence-based READMEs and video from code. Syncs through a hook at the end of every session and resumes automatically after the usage limit resets."
   },
   {
     name: "ytb-shorts",
@@ -76,6 +94,13 @@ const projects = [
     pt: "Aplicação web que classifica roupas por imagem com um modelo treinado no Teachable Machine e detecta objetos com o COCO-SSD. Tudo roda no navegador, sem backend nem instalação.",
     en: "Web app that classifies clothing from an image with a Teachable Machine model and detects objects with COCO-SSD. Everything runs in the browser, no back-end or install.",
     links: [["GitHub", gh + "classificador-e-detector-web"]]
+  },
+  {
+    name: "Boteco do Baralho",
+    cat: "jogos",
+    stack: "Unity 6, C#, Steamworks, xUnit, Blender",
+    pt: "Jogo 3D de cartas brasileiro para a Steam, ambientado num boteco, em desenvolvimento e começando pela Bisca. Partidas com amigos pela Steam com host autoritativo, bots em quatro níveis completando a mesa, regras regionais que se ligam e desligam e sinais entre parceiros vistos pela câmera. Regras em C# puro cobertas por mais de 200 testes; bonecos e cenário de massinha gerados por script no Blender.",
+    en: "A 3D Brazilian card game for Steam set in a corner bar, in development and starting with Bisca. Matches with friends over Steam with an authoritative host, bots at four skill levels filling the table, toggleable regional rules and partner signals seen through the camera. Rules in plain C# covered by over 200 tests; clay-style characters and set generated by script in Blender."
   },
   {
     name: "Limbus Companion",
@@ -126,9 +151,10 @@ const en = {
   "now.today": "Today",
   "now.todayv": "Senior Dev at Autoglass",
   "now.xp": "Experience",
-  "now.xpv": "5 years in production",
   "now.base": "Base",
-  "now.basev": "Brazil, working remotely",
+  "now.basev": "Vitória/ES, Brazil, working remotely",
+  "home.projects": "Featured projects",
+  "home.all": "All projects",
   "services.title": "What I do",
   "s1.t": "APIs and integrations",
   "s1.d": "Solid, fast C#/.NET back-ends. Integration with third-party systems, payments, webhooks, queues, SMS, WhatsApp, OAuth2 and AWS.",
@@ -170,6 +196,9 @@ const en = {
 const i18nEls = document.querySelectorAll("[data-i18n]");
 const pt = { "contact.copied": "Copiado" };
 i18nEls.forEach(el => { pt[el.dataset.i18n] = el.textContent; });
+const years = Math.floor((Date.now() - new Date(2021, 2, 1)) / 31557600000);
+pt["now.xpv"] = `${years} anos em produção`;
+en["now.xpv"] = `${years} years in production`;
 
 let lang = "pt";
 let filter = "all";
@@ -191,26 +220,31 @@ function reveal(els) {
   });
 }
 
+function projectCard(p, featured) {
+  const card = document.createElement("article");
+  card.className = "project reveal" + (featured ? " featured" : "") + (rendered ? " in" : "");
+  const links = p.links
+    ? p.links.map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener" class="link-arrow">${label}</a>`).join("")
+    : `<span class="private">${lang === "pt" ? "repositório privado" : "private repository"}</span>`;
+  card.innerHTML = `
+    <div class="top"><h3>${p.name}</h3><span class="cat">${catLabel[lang][p.cat]}</span></div>
+    <p class="tags">${p.stack}</p>
+    <p>${p[lang]}</p>
+    <div class="links">${links}</div>`;
+  return card;
+}
+
+function fillProjects(list, items, withFeatured) {
+  list.innerHTML = "";
+  items.forEach(p => list.appendChild(projectCard(p, withFeatured && p.featured)));
+  if (!rendered) reveal(list.querySelectorAll(".reveal"));
+}
+
 function renderProjects() {
   const list = document.getElementById("project-list");
-  if (!list) return;
-  list.innerHTML = "";
-  projects
-    .filter(p => filter === "all" || p.cat === filter)
-    .forEach(p => {
-      const card = document.createElement("article");
-      card.className = "project reveal" + (p.featured ? " featured" : "") + (rendered ? " in" : "");
-      const links = p.links
-        ? p.links.map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener" class="link-arrow">${label}</a>`).join("")
-        : `<span class="private">${lang === "pt" ? "repositório privado" : "private repository"}</span>`;
-      card.innerHTML = `
-        <div class="top"><h3>${p.name}</h3><span class="cat">${catLabel[lang][p.cat]}</span></div>
-        <p class="tags">${p.stack}</p>
-        <p>${p[lang]}</p>
-        <div class="links">${links}</div>`;
-      list.appendChild(card);
-    });
-  if (!rendered) reveal(list.querySelectorAll(".reveal"));
+  if (list) fillProjects(list, projects.filter(p => filter === "all" || p.cat === filter), true);
+  const home = document.getElementById("home-projects");
+  if (home) fillProjects(home, projects.filter(p => p.home), false);
   rendered = true;
 }
 
